@@ -17,5 +17,11 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'Quel est l'ip du serveur ?') {
+    	message.reply('L'ip est : play.magic-of-disney.ovh');
+  	}
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
